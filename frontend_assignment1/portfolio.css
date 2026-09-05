@@ -1,0 +1,565 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e7eb;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.small-heading {
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 550px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.secondary-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+
+/* ================= CODE CARD ================= */
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+}
+
+.code-window {
+    width: 100%;
+    max-width: 480px;
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.window-header {
+    height: 40px;
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 15px;
+}
+
+.window-header span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6b7280;
+}
+
+.code-content {
+    padding: 30px;
+    color: #d1d5db;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.code-content p {
+    margin-bottom: 12px;
+}
+
+.indent {
+    padding-left: 25px;
+}
+
+.keyword {
+    color: #c084fc;
+}
+
+.class-name {
+    color: #60a5fa;
+}
+
+.string {
+    color: #86efac;
+}
+
+.boolean {
+    color: #fbbf24;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-top: 5px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-box {
+    padding: 25px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.info-box h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    color: #6b7280;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-section {
+    background: #f8fafc;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    margin-bottom: 5px;
+}
+
+.skill-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================= CURRENT FOCUS ================= */
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.focus-card {
+    padding: 30px;
+    border-left: 3px solid #2563eb;
+    background: #f8fafc;
+}
+
+.focus-number {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.focus-card h3 {
+    margin: 12px 0;
+}
+
+.focus-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================= PROFILES ================= */
+
+.profiles-section {
+    background: #f8fafc;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-card {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.profile-card h3 {
+    margin-bottom: 3px;
+}
+
+.profile-card p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 22px;
+    color: #2563eb;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-card {
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.education-year {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.education-content h3 {
+    font-size: 22px;
+}
+
+.education-content h4 {
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.education-content p {
+    color: #6b7280;
+    margin: 5px 0;
+}
+
+.education-content span {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background: #f8fafc;
+}
+
+.contact-card {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 55px 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-card > p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.email-link {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.contact-links a {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    color: #2563eb;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+}
