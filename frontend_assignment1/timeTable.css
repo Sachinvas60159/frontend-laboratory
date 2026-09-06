@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background-color: lightblue;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    background-color: lightyellow;
+}
